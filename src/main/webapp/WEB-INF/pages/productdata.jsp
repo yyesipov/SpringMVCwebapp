@@ -30,6 +30,7 @@
         .tg th {
             font-family: Arial, sans-serif;
             font-size: 14px;
+            font-weight: normal;
             padding: 10px 5px;
             border-style: solid;
             border-width: 1px;
@@ -49,6 +50,7 @@
 <body>
 <h1>Product Details</h1>
 
+
 <table class="tg">
     <tr>
         <th width="80">ID</th>
@@ -61,7 +63,7 @@
         <td>${product.id}</td>
         <td>${product.productName}</td>
         <td>${product.productManufacturer}</td>
-        <td>${product.price/100}.${product.price%100}</td>
+        <td>${product.price/100}</td>
         <td>${product.description}</td>
     </tr>
 </table>

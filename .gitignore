@@ -1,3 +1,7 @@
-.idea/
-out/
-*iml
+.idea/*
+*.class
+target/*
+
+/.war
+/.ear
+/.jar

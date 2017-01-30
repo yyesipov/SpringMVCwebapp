@@ -68,9 +68,9 @@
         <c:forEach items="${listProducts}" var="product">
             <tr>
                 <td>${product.id}</td>
-                <td>${product.productName}</td>
+                <td><a href="/productdata/${product.id}" target="_blank">${product.productName}</a></td>
                 <td>${product.productManufacturer}</td>
-                <td>${product.price/100}.${product.price%100}</td>
+                <td>${product.price/100}</td>
                 <td>${product.description}</td>
                 <td><a href="<c:url value='/edit/${product.id}'/>">Edit</a></td>
                 <td><a href="<c:url value='/remove/${product.id}'/>">Delete</a></td>
@@ -94,6 +94,7 @@
                     </td>
                     <td>
                         <form:input path="id" readonly="true" size="8" disabled="true"/>
+                        <form:hidden path="id"/>
                     </td>
                 </tr>
             </c:if>
